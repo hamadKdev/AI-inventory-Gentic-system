@@ -1,6 +1,6 @@
 import os
 import hashlib
-
+from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime, timedelta, timezone
 
 from dotenv import load_dotenv
@@ -54,7 +54,15 @@ app = FastAPI(
     title="Nowshera Shopping Mall Inventory API",
     version="1.0"
 )
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://ai-inventory-gentic-system.vercel.app"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # =========================================================
 # PASSWORD
