@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/__api_proxy/:path*",
+      "destination": "https://ai-inventory-gentic-system.vercel.app/:path*"
+    },
+    {
+      "source": "/__n8n_proxy",
+      "destination": "https://hamadkdev.app.n8n.cloud/webhook/c1905487-fe80-441b-9de8-fb57700f45b9"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

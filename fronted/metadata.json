@@ -1,0 +1,6 @@
+{
+  "name": "Nowshera Shopping Mall Inventory Management System",
+  "description": "Internal inventory management system with AI assistant for Nowshera Shopping Mall manager and staff operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
